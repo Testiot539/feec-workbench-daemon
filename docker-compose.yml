@@ -1,0 +1,59 @@
+version: "3.9"
+services:
+  feecc_workbench_daemon:
+    environment:
+      # Use these environment variables to configure your deployment
+      LANGUAGE_MESSAGE: "ru" # Choose message language
+      MONGODB_URI: "mongodb://root:pass@localhost:27017/?authMechanism=DEFAULT"  # Your MongoDB connection URI
+      MONGODB_DB_NAME: "FEECC-Academy"  # Your MongoDB DB name
+      ROBONOMICS_ENABLE_DATALOG: false  # Whether to enable datalog posting or not
+      ROBONOMICS_ACCOUNT_SEED: ""  # Your Robonomics network account seed phrase
+      ROBONOMICS_SUBSTRATE_NODE_URI: ""  # Robonomics network node URI
+      IPFS_GATEWAY_ENABLE: false  # Whether to enable IPFS posting or not
+      IPFS_GATEWAY_IPFS_SERVER_URI: ""  # Your IPFS gateway deployment URI
+      PRINTER_ENABLE: false  # Whether to enable printing or not
+      PRINTER_PAPER_ASPECT_RATIO: 40:25  # Printer labels aspect ratio (size in mm in form of width:height)
+      PRINTER_PRINT_BARCODE: false  # Whether to print barcodes or not
+      PRINTER_PRINT_QR: false  # Whether to print QR codes or not
+      PRINTER_PRINT_QR_ONLY_FOR_COMPOSITE: false  # Whether to enable QR code printing for non-composite units or note or not
+      PRINTER_PRINT_SECURITY_TAG: false  # Whether to enable printing security tags or not
+      PRINTER_SECURITY_TAG_ADD_TIMESTAMP: false  # Whether to enable timestamps on security tags or not
+      CAMERA_ENABLE: false  # Whether to enable Cameraman or not
+      CAMERA_FFMPEG_COMMAND: ""
+      WORKBENCH_NUMBER: 1  # Workbench number
+      HID_DEVICES_RFID_READER: "Sample RFID Scanner"  # RFID reader device name
+      HID_DEVICES_BARCODE_READER: ""  # Barcode reader device name
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - "/etc/timezone:/etc/timezone:ro"
+      - "/etc/localtime:/etc/localtime:ro"
+      - "./unit-passports/:/src/unit-passports/"
+      - "./workbench.log:/src/workbench.log"
+      - "./rootCA.pem:/src/rootCA.pem:ro"
+      - "./workbench.pem:/src/workbench.pem:ro"
+    network_mode: host
+    restart: always
+
+  hid-emulator:
+    image: nyurik/alpine-python3-requests
+    container_name: feecc_academy_hid_emulator
+    network_mode: host
+    build:
+      context: hid-emulator
+      dockerfile: Dockerfile
+
+  mongodb:
+    image: mongo:jammy
+    container_name: feecc_academy_mongoDB
+    network_mode: host
+    environment:
+      MONGO_INITDB_DATABASE: FEECC-Academy
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: pass
+    volumes:
+      - ./mongodb-local:/docker-entrypoint-initdb.d:ro
+
+
+  
