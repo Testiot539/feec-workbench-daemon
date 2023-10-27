@@ -1,0 +1,82 @@
+[32m2023-10-27 10:25:23.100[0m | [1mINFO    [0m | [36mapp[0m:[36mstartup_event[0m:[36m51[0m - [1mRuntime app version: 2.0[0m
+[32m2023-10-27 10:25:23.372[0m | [1mINFO    [0m | [36mfeecc_workbench.Messenger[0m:[36mmessage_generator[0m:[36m160[0m - [1mSSE connection to message streaming endpoint established.[0m
+[32m2023-10-27 10:25:23.373[0m | [34m[1mDEBUG   [0m | [36mfeecc_workbench.Messenger[0m:[36m__post_init__[0m:[36m65[0m - [34m[1mMessage brocker b1e6 created[0m
+[32m2023-10-27 10:25:24.371[0m | [1mINFO    [0m | [36m_workbench_router[0m:[36mstate_update_generator[0m:[36m53[0m - [1mSSE connection to state streaming endpoint established.[0m
+[32m2023-10-27 10:25:24.371[0m | [34m[1mDEBUG   [0m | [36m_workbench_router[0m:[36mstate_update_generator[0m:[36m58[0m - [34m[1mState notification sent to the SSE client[0m
+[32m2023-10-27 10:26:03.779[0m | [1mINFO    [0m | [36mfeecc_workbench.Messenger[0m:[36mmessage_generator[0m:[36m170[0m - [1mSSE connection to message streaming endpoint closed[0m
+[32m2023-10-27 10:26:03.780[0m | [34m[1mDEBUG   [0m | [36mfeecc_workbench.Messenger[0m:[36mkill[0m:[36m75[0m - [34m[1mBrocker b1e6 killed.[0m
+[32m2023-10-27 10:26:03.783[0m | [1mINFO    [0m | [36m_workbench_router[0m:[36mstate_update_generator[0m:[36m63[0m - [1mSSE connection to state streaming endpoint closed. Cancelled by cancel scope 7f65a575e6b0[0m
+[32m2023-10-27 10:26:04.048[0m | [1mINFO    [0m | [36m_workbench_router[0m:[36mstate_update_generator[0m:[36m53[0m - [1mSSE connection to state streaming endpoint established.[0m
+[32m2023-10-27 10:26:04.049[0m | [1mINFO    [0m | [36mfeecc_workbench.Messenger[0m:[36mmessage_generator[0m:[36m160[0m - [1mSSE connection to message streaming endpoint established.[0m
+[32m2023-10-27 10:26:04.050[0m | [34m[1mDEBUG   [0m | [36mfeecc_workbench.Messenger[0m:[36m__post_init__[0m:[36m65[0m - [34m[1mMessage brocker 2382 created[0m
+[32m2023-10-27 10:26:04.050[0m | [34m[1mDEBUG   [0m | [36m_workbench_router[0m:[36mstate_update_generator[0m:[36m58[0m - [34m[1mState notification sent to the SSE client[0m
+[32m2023-10-27 10:26:04.078[0m | [34m[1mDEBUG   [0m | [36mfeecc_workbench.utils[0m:[36mwrap_func[0m:[36m38[0m - [34m[1mFunction 'get_all_schemas' executed in 0.0230s[0m
+[32m2023-10-27 10:28:00.978[0m | [34m[1mDEBUG   [0m | [36mdependencies[0m:[36midentify_sender[0m:[36m52[0m - [34m[1mReceived event dict: {'string': '1111111111', 'name': 'Sample RFID Scanner'}[0m
+[32m2023-10-27 10:28:00.978[0m | [34m[1mDEBUG   [0m | [36m_workbench_router[0m:[36mhandle_hid_event[0m:[36m221[0m - [34m[1mHandling RFID event. String: 1111111111[0m
+[32m2023-10-27 10:28:00.983[0m | [34m[1mDEBUG   [0m | [36mfeecc_workbench.utils[0m:[36mwrap_func[0m:[36m38[0m - [34m[1mFunction 'get_employee_by_card_id' executed in 0.0036s[0m
+[32m2023-10-27 10:28:00.983[0m | [1mINFO    [0m | [36mfeecc_workbench.WorkBench[0m:[36mlog_in[0m:[36m101[0m - [1mEmployee FEECC is logged in at the workbench no. 1[0m
+[32m2023-10-27 10:28:00.984[0m | [1mINFO    [0m | [36mfeecc_workbench.WorkBench[0m:[36mswitch_state[0m:[36m90[0m - [1mWorkbench no.1 state changed: AwaitLogin -> AuthorizedIdling[0m
+[32m2023-10-27 10:28:00.985[0m | [1mINFO    [0m | [36mfeecc_workbench.Messenger[0m:[36memit_message[0m:[36m107[0m - [1mMessage 'Авторизован Robonomics Academy Student FEECC' emitted to 1 brockers[0m
+[32m2023-10-27 10:28:00.986[0m | [34m[1mDEBUG   [0m | [36m_workbench_router[0m:[36mstate_update_generator[0m:[36m58[0m - [34m[1mState notification sent to the SSE client[0m
+[32m2023-10-27 10:28:01.037[0m | [34m[1mDEBUG   [0m | [36mfeecc_workbench.utils[0m:[36mwrap_func[0m:[36m38[0m - [34m[1mFunction 'get_all_schemas' executed in 0.0033s[0m
+[32m2023-10-27 10:28:01.087[0m | [34m[1mDEBUG   [0m | [36mfeecc_workbench.utils[0m:[36mwrap_func[0m:[36m38[0m - [34m[1mFunction 'get_unit_ids_and_names_by_status' executed in 0.0026s[0m
+[32m2023-10-27 10:28:04.633[0m | [34m[1mDEBUG   [0m | [36mfeecc_workbench.utils[0m:[36mwrap_func[0m:[36m38[0m - [34m[1mFunction 'get_schema_by_id' executed in 0.0026s[0m
+[32m2023-10-27 10:28:04.656[0m | [34m[1mDEBUG   [0m | [36mfeecc_workbench.utils[0m:[36mwrap_func[0m:[36m38[0m - [34m[1mFunction 'get_schema_by_id' executed in 0.0018s[0m
+[32m2023-10-27 10:28:04.672[0m | [34m[1mDEBUG   [0m | [36mfeecc_workbench.utils[0m:[36mwrap_func[0m:[36m25[0m - [34m[1mFunction '_resize_to_paper_aspect_ratio' executed in 0.0016s[0m
+[32m2023-10-27 10:28:04.680[0m | [34m[1mDEBUG   [0m | [36mfeecc_workbench.database[0m:[36m_bulk_push_production_stages[0m:[36m61[0m - [34m[1mBulk write operation result: {'writeErrors': [], 'writeConcernErrors': [], 'nInserted': 3, 'nUpserted': 0, 'nMatched': 0, 'nModified': 0, 'nRemoved': 0, 'upserted': []}[0m
+[32m2023-10-27 10:28:04.683[0m | [34m[1mDEBUG   [0m | [36mfeecc_workbench.utils[0m:[36mwrap_func[0m:[36m38[0m - [34m[1mFunction 'push_unit' executed in 0.0064s[0m
+[32m2023-10-27 10:28:04.683[0m | [1mINFO    [0m | [36m_unit_router[0m:[36mcreate_unit[0m:[36m25[0m - [1mInitialized new unit with internal ID 2737797709509[0m
+[32m2023-10-27 10:28:04.698[0m | [34m[1mDEBUG   [0m | [36mfeecc_workbench.utils[0m:[36mwrap_func[0m:[36m38[0m - [34m[1mFunction 'get_schema_by_id' executed in 0.0014s[0m
+[32m2023-10-27 10:28:04.706[0m | [34m[1mDEBUG   [0m | [36mfeecc_workbench.utils[0m:[36mwrap_func[0m:[36m25[0m - [34m[1mFunction '_resize_to_paper_aspect_ratio' executed in 0.0013s[0m
+[32m2023-10-27 10:28:04.710[0m | [34m[1mDEBUG   [0m | [36mfeecc_workbench.utils[0m:[36mwrap_func[0m:[36m38[0m - [34m[1mFunction 'get_unit_by_internal_id' executed in 0.0155s[0m
+[32m2023-10-27 10:28:04.710[0m | [1mINFO    [0m | [36mfeecc_workbench.WorkBench[0m:[36massign_unit[0m:[36m143[0m - [1mUnit 2737797709509 has been assigned to the workbench[0m
+[32m2023-10-27 10:28:04.711[0m | [1mINFO    [0m | [36mfeecc_workbench.Messenger[0m:[36memit_message[0m:[36m107[0m - [1mMessage 'Изделие с внутренним номером  2737797709509 помещено на стол' emitted to 1 brockers[0m
+[32m2023-10-27 10:28:04.712[0m | [1mINFO    [0m | [36mfeecc_workbench.WorkBench[0m:[36mswitch_state[0m:[36m90[0m - [1mWorkbench no.1 state changed: AuthorizedIdling -> UnitAssignedIdling[0m
+[32m2023-10-27 10:28:04.713[0m | [34m[1mDEBUG   [0m | [36m_workbench_router[0m:[36mstate_update_generator[0m:[36m58[0m - [34m[1mState notification sent to the SSE client[0m
+[32m2023-10-27 10:28:04.745[0m | [34m[1mDEBUG   [0m | [36mfeecc_workbench.utils[0m:[36mwrap_func[0m:[36m38[0m - [34m[1mFunction 'get_schema_by_id' executed in 0.0014s[0m
+[32m2023-10-27 10:28:04.754[0m | [34m[1mDEBUG   [0m | [36mfeecc_workbench.utils[0m:[36mwrap_func[0m:[36m25[0m - [34m[1mFunction '_resize_to_paper_aspect_ratio' executed in 0.0011s[0m
+[32m2023-10-27 10:28:04.759[0m | [34m[1mDEBUG   [0m | [36mfeecc_workbench.utils[0m:[36mwrap_func[0m:[36m38[0m - [34m[1mFunction 'get_unit_by_internal_id' executed in 0.0173s[0m
+[32m2023-10-27 10:28:04.777[0m | [34m[1mDEBUG   [0m | [36mfeecc_workbench.utils[0m:[36mwrap_func[0m:[36m38[0m - [34m[1mFunction 'get_schema_by_id' executed in 0.0015s[0m
+[32m2023-10-27 10:28:07.174[0m | [34m[1mDEBUG   [0m | [36mfeecc_workbench.Unit[0m:[36mstart_operation[0m:[36m174[0m - [34m[1mStarted production stage Prepare Tools for unit cdf810df189247a29b931c89d79f5118[0m
+[32m2023-10-27 10:28:07.175[0m | [1mINFO    [0m | [36mfeecc_workbench.WorkBench[0m:[36mswitch_state[0m:[36m90[0m - [1mWorkbench no.1 state changed: UnitAssignedIdling -> ProductionStageOngoing[0m
+[32m2023-10-27 10:28:07.175[0m | [1mINFO    [0m | [36m_workbench_router[0m:[36mstart_operation[0m:[36m106[0m - [1mStarted operation 'Prepare Tools' on Unit 2737797709509[0m
+[32m2023-10-27 10:28:07.177[0m | [34m[1mDEBUG   [0m | [36m_workbench_router[0m:[36mstate_update_generator[0m:[36m58[0m - [34m[1mState notification sent to the SSE client[0m
+[32m2023-10-27 10:28:10.858[0m | [1mINFO    [0m | [36mfeecc_workbench.WorkBench[0m:[36mend_operation[0m:[36m248[0m - [1mTrying to end operation[0m
+[32m2023-10-27 10:28:10.858[0m | [1mINFO    [0m | [36mfeecc_workbench.Unit[0m:[36mend_operation[0m:[36m207[0m - [1mEnding production stage Prepare Tools on unit cdf810df189247a29b931c89d79f5118[0m
+[32m2023-10-27 10:28:10.860[0m | [34m[1mDEBUG   [0m | [36mfeecc_workbench.database[0m:[36m_bulk_push_production_stages[0m:[36m61[0m - [34m[1mBulk write operation result: {'writeErrors': [], 'writeConcernErrors': [], 'nInserted': 0, 'nUpserted': 0, 'nMatched': 3, 'nModified': 1, 'nRemoved': 0, 'upserted': []}[0m
+[32m2023-10-27 10:28:10.862[0m | [34m[1mDEBUG   [0m | [36mfeecc_workbench.utils[0m:[36mwrap_func[0m:[36m38[0m - [34m[1mFunction 'push_unit' executed in 0.0038s[0m
+[32m2023-10-27 10:28:10.862[0m | [1mINFO    [0m | [36mfeecc_workbench.WorkBench[0m:[36mswitch_state[0m:[36m90[0m - [1mWorkbench no.1 state changed: ProductionStageOngoing -> UnitAssignedIdling[0m
+[32m2023-10-27 10:28:10.863[0m | [1mINFO    [0m | [36m_workbench_router[0m:[36mend_operation[0m:[36m122[0m - [1mEnded current operation on unit 2737797709509[0m
+[32m2023-10-27 10:28:10.865[0m | [34m[1mDEBUG   [0m | [36m_workbench_router[0m:[36mstate_update_generator[0m:[36m58[0m - [34m[1mState notification sent to the SSE client[0m
+[32m2023-10-27 10:28:10.879[0m | [34m[1mDEBUG   [0m | [36mfeecc_workbench.Unit[0m:[36mstart_operation[0m:[36m174[0m - [34m[1mStarted production stage Saw Through the Single Device for unit cdf810df189247a29b931c89d79f5118[0m
+[32m2023-10-27 10:28:10.880[0m | [1mINFO    [0m | [36mfeecc_workbench.WorkBench[0m:[36mswitch_state[0m:[36m90[0m - [1mWorkbench no.1 state changed: UnitAssignedIdling -> ProductionStageOngoing[0m
+[32m2023-10-27 10:28:10.880[0m | [1mINFO    [0m | [36m_workbench_router[0m:[36mstart_operation[0m:[36m106[0m - [1mStarted operation 'Saw Through the Single Device' on Unit 2737797709509[0m
+[32m2023-10-27 10:28:10.881[0m | [34m[1mDEBUG   [0m | [36m_workbench_router[0m:[36mstate_update_generator[0m:[36m58[0m - [34m[1mState notification sent to the SSE client[0m
+[32m2023-10-27 10:28:12.186[0m | [1mINFO    [0m | [36mfeecc_workbench.WorkBench[0m:[36mend_operation[0m:[36m248[0m - [1mTrying to end operation[0m
+[32m2023-10-27 10:28:12.187[0m | [1mINFO    [0m | [36mfeecc_workbench.Unit[0m:[36mend_operation[0m:[36m207[0m - [1mEnding production stage Saw Through the Single Device on unit cdf810df189247a29b931c89d79f5118[0m
+[32m2023-10-27 10:28:12.192[0m | [34m[1mDEBUG   [0m | [36mfeecc_workbench.database[0m:[36m_bulk_push_production_stages[0m:[36m61[0m - [34m[1mBulk write operation result: {'writeErrors': [], 'writeConcernErrors': [], 'nInserted': 0, 'nUpserted': 0, 'nMatched': 3, 'nModified': 1, 'nRemoved': 0, 'upserted': []}[0m
+[32m2023-10-27 10:28:12.195[0m | [34m[1mDEBUG   [0m | [36mfeecc_workbench.utils[0m:[36mwrap_func[0m:[36m38[0m - [34m[1mFunction 'push_unit' executed in 0.0075s[0m
+[32m2023-10-27 10:28:12.196[0m | [1mINFO    [0m | [36mfeecc_workbench.WorkBench[0m:[36mswitch_state[0m:[36m90[0m - [1mWorkbench no.1 state changed: ProductionStageOngoing -> UnitAssignedIdling[0m
+[32m2023-10-27 10:28:12.196[0m | [1mINFO    [0m | [36m_workbench_router[0m:[36mend_operation[0m:[36m122[0m - [1mEnded current operation on unit 2737797709509[0m
+[32m2023-10-27 10:28:12.199[0m | [34m[1mDEBUG   [0m | [36m_workbench_router[0m:[36mstate_update_generator[0m:[36m58[0m - [34m[1mState notification sent to the SSE client[0m
+[32m2023-10-27 10:28:12.212[0m | [34m[1mDEBUG   [0m | [36mfeecc_workbench.Unit[0m:[36mstart_operation[0m:[36m174[0m - [34m[1mStarted production stage Stack Tools for unit cdf810df189247a29b931c89d79f5118[0m
+[32m2023-10-27 10:28:12.213[0m | [1mINFO    [0m | [36mfeecc_workbench.WorkBench[0m:[36mswitch_state[0m:[36m90[0m - [1mWorkbench no.1 state changed: UnitAssignedIdling -> ProductionStageOngoing[0m
+[32m2023-10-27 10:28:12.213[0m | [1mINFO    [0m | [36m_workbench_router[0m:[36mstart_operation[0m:[36m106[0m - [1mStarted operation 'Stack Tools' on Unit 2737797709509[0m
+[32m2023-10-27 10:28:12.215[0m | [34m[1mDEBUG   [0m | [36m_workbench_router[0m:[36mstate_update_generator[0m:[36m58[0m - [34m[1mState notification sent to the SSE client[0m
+[32m2023-10-27 10:28:13.290[0m | [1mINFO    [0m | [36mfeecc_workbench.WorkBench[0m:[36mend_operation[0m:[36m248[0m - [1mTrying to end operation[0m
+[32m2023-10-27 10:28:13.290[0m | [1mINFO    [0m | [36mfeecc_workbench.Unit[0m:[36mend_operation[0m:[36m207[0m - [1mEnding production stage Stack Tools on unit cdf810df189247a29b931c89d79f5118[0m
+[32m2023-10-27 10:28:13.291[0m | [1mINFO    [0m | [36mfeecc_workbench.Unit[0m:[36mend_operation[0m:[36m227[0m - [1mUnit has no more pending production stages. Unit status changed: production -> built[0m
+[32m2023-10-27 10:28:13.293[0m | [34m[1mDEBUG   [0m | [36mfeecc_workbench.database[0m:[36m_bulk_push_production_stages[0m:[36m61[0m - [34m[1mBulk write operation result: {'writeErrors': [], 'writeConcernErrors': [], 'nInserted': 0, 'nUpserted': 0, 'nMatched': 3, 'nModified': 1, 'nRemoved': 0, 'upserted': []}[0m
+[32m2023-10-27 10:28:13.295[0m | [34m[1mDEBUG   [0m | [36mfeecc_workbench.utils[0m:[36mwrap_func[0m:[36m38[0m - [34m[1mFunction 'push_unit' executed in 0.0037s[0m
+[32m2023-10-27 10:28:13.295[0m | [1mINFO    [0m | [36mfeecc_workbench.WorkBench[0m:[36mswitch_state[0m:[36m90[0m - [1mWorkbench no.1 state changed: ProductionStageOngoing -> UnitAssignedIdling[0m
+[32m2023-10-27 10:28:13.295[0m | [1mINFO    [0m | [36m_workbench_router[0m:[36mend_operation[0m:[36m122[0m - [1mEnded current operation on unit 2737797709509[0m
+[32m2023-10-27 10:28:13.297[0m | [34m[1mDEBUG   [0m | [36m_workbench_router[0m:[36mstate_update_generator[0m:[36m58[0m - [34m[1mState notification sent to the SSE client[0m
+[32m2023-10-27 10:28:14.498[0m | [1mINFO    [0m | [36mfeecc_workbench.passport_generator[0m:[36m_save_passport[0m:[36m79[0m - [1mUnit passport with UUID cdf810df189247a29b931c89d79f5118 has been dumped successfully[0m
+[32m2023-10-27 10:28:14.501[0m | [34m[1mDEBUG   [0m | [36mfeecc_workbench.database[0m:[36m_bulk_push_production_stages[0m:[36m61[0m - [34m[1mBulk write operation result: {'writeErrors': [], 'writeConcernErrors': [], 'nInserted': 0, 'nUpserted': 0, 'nMatched': 3, 'nModified': 0, 'nRemoved': 0, 'upserted': []}[0m
+[32m2023-10-27 10:28:14.503[0m | [34m[1mDEBUG   [0m | [36mfeecc_workbench.utils[0m:[36mwrap_func[0m:[36m38[0m - [34m[1mFunction 'push_unit' executed in 0.0038s[0m
+[32m2023-10-27 10:28:14.518[0m | [1mINFO    [0m | [36mfeecc_workbench.WorkBench[0m:[36mremove_unit[0m:[36m165[0m - [1mUnit 2737797709509 has been removed from the workbench[0m
+[32m2023-10-27 10:28:14.520[0m | [1mINFO    [0m | [36mfeecc_workbench.Messenger[0m:[36memit_message[0m:[36m107[0m - [1mMessage 'Изделие с внутренним номером  2737797709509 убрано со стола' emitted to 1 brockers[0m
+[32m2023-10-27 10:28:14.520[0m | [1mINFO    [0m | [36mfeecc_workbench.WorkBench[0m:[36mswitch_state[0m:[36m90[0m - [1mWorkbench no.1 state changed: UnitAssignedIdling -> AuthorizedIdling[0m
+[32m2023-10-27 10:28:14.521[0m | [34m[1mDEBUG   [0m | [36m_workbench_router[0m:[36mstate_update_generator[0m:[36m58[0m - [34m[1mState notification sent to the SSE client[0m
+[32m2023-10-27 10:28:14.564[0m | [34m[1mDEBUG   [0m | [36mfeecc_workbench.utils[0m:[36mwrap_func[0m:[36m38[0m - [34m[1mFunction 'get_all_schemas' executed in 0.0019s[0m
+[32m2023-10-27 10:28:14.570[0m | [34m[1mDEBUG   [0m | [36mfeecc_workbench.utils[0m:[36mwrap_func[0m:[36m38[0m - [34m[1mFunction 'get_unit_ids_and_names_by_status' executed in 0.0017s[0m
